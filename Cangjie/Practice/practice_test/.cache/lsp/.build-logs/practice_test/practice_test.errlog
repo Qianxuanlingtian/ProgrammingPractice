@@ -1,0 +1,17 @@
+[33mwarning[0m: unused variable:'f2Res'
+  [36m==>[0m D:\Program\VS_Code\CangJie\practice\practice_test\src\lambdaexpression.cj:15:9:
+   [36m| [0m
+[36m15[0m [36m| [0m    let f2Res = f2{ println("World") }[0m
+   [36m| [0m        [33m^^^^^ unused variable[0m
+   [36m| [0m
+   [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+[33mwarning[0m: unused variable:'r'
+  [36m==>[0m D:\Program\VS_Code\CangJie\practice\practice_test\src\main.cj:31:9:
+   [36m| [0m
+[36m31[0m [36m| [0m    var r = Console.stdIn.readln()[0m
+   [36m| [0m        [33m^ unused variable[0m
+   [36m| [0m
+   [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+2 warnings generated, 2 warnings printed.

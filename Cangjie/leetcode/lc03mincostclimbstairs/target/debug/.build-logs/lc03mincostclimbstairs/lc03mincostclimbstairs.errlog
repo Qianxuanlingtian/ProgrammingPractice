@@ -1,0 +1,12 @@
+[33mwarning[0m: unused function:'otherString'
+  [36m==>[0m D:\Program\VS_Code\CangJie\leetcode\lc03mincostclimbstairs\src\main.cj:10:9:
+   [36m| [0m
+[36m10[0m [36m| [0m          func otherString(): String {[0m
+   [36m| [0m [33m_[0m[33m________^[0m
+[36m11[0m [36m| [0m[33m|[0m             return "None"[0m
+[36m12[0m [36m| [0m[33m|[0m         }[0m
+   [36m| [0m[33m|[0m[33m_[0m[33m________^ unused function[0m
+   [36m| [0m
+   [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+1 warning generated, 1 warning printed.

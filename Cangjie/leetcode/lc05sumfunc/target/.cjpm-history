@@ -1,0 +1,23 @@
+{
+  "resolves": [
+    {
+      "rootPackageName": "lc05sumfunc",
+      "modulePath": ".",
+      "packagePath": "D:\\Program\\VS_Code\\CangJie\\leetcode\\lc05sumfunc\\src",
+      "fullName": "lc05sumfunc",
+      "isMacroPackage": false,
+      "output-type": "executable",
+      "compile-option": "",
+      "native-compile-option": "",
+      "customized-option": {},
+      "link-option": "",
+      "native-link-option": "",
+      "requires": [],
+      "c_libs": {},
+      "isTestPkg": false,
+      "accessLevel": "public"
+    }
+  ],
+  "binDeps": {},
+  "crossBinDeps": {}
+}

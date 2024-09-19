@@ -1,0 +1,13 @@
+{
+  "packageInformation": {
+    "calculator": {
+      "rootPackageName": "calculator",
+      "fileNameHash": "-6769267236813583947",
+      "timeStamp": 1722763270,
+      "buildFlag": true,
+      "exeName": "main"
+    }
+  },
+  "jsonHash": "-6654748537847132639",
+  "rootPackageName": "calculator"
+}

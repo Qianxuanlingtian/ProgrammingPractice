@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cangjie (CJNative): launch",
+            "program": "d:\\Program\\VS_Code\\CangJie\\practice\\bank_custemer_manager\\target\\debug\\bin\\main.exe",
+            "request": "launch",
+            "type": "cangjieDebug",
+            "externalConsole": true,
+            "buildBeforeLaunch": true,
+            "env": {
+                "PATH": "D:\\Application\\Cangjie\\runtime\\lib\\windows_x86_64_llvm"
+            },
+            "debugMacro": false
+        }
+    ]
+}

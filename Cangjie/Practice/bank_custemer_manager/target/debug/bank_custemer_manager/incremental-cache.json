@@ -1,0 +1,13 @@
+{
+  "packageInformation": {
+    "bank_custemer_manager": {
+      "rootPackageName": "bank_custemer_manager",
+      "fileNameHash": "495752101619336094",
+      "timeStamp": 1724643395,
+      "buildFlag": true,
+      "exeName": "main"
+    }
+  },
+  "jsonHash": "-3678610539081141241",
+  "rootPackageName": "bank_custemer_manager"
+}

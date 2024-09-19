@@ -1,0 +1,13 @@
+{
+  "packageInformation": {
+    "quicksort": {
+      "rootPackageName": "quicksort",
+      "fileNameHash": "8922090114645105134",
+      "timeStamp": 1726200873,
+      "buildFlag": true,
+      "exeName": "main"
+    }
+  },
+  "jsonHash": "-987154793962590340",
+  "rootPackageName": "quicksort"
+}

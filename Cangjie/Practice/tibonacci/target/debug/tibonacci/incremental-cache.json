@@ -1,0 +1,13 @@
+{
+  "packageInformation": {
+    "tibonacci": {
+      "rootPackageName": "tibonacci",
+      "fileNameHash": "712770512293612837",
+      "timeStamp": 1725438400,
+      "buildFlag": true,
+      "exeName": "main"
+    }
+  },
+  "jsonHash": "-7632202904242758243",
+  "rootPackageName": "tibonacci"
+}

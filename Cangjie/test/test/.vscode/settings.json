@@ -1,0 +1,27 @@
+{
+	"CangjieSdk.Option": "CJNative",
+	"terminal.integrated.env.windows": {
+		"CANGJIE_HOME": "D:\\Application\\Cangjie",
+		"CANGJIE_PATH": "D:\\Application\\Cangjie\\runtime\\lib\\windows_x86_64_llvm;D:\\Application\\Cangjie\\bin;D:\\Application\\Cangjie\\tools\\bin;D:\\Application\\Cangjie\\debugger\\bin;",
+		"PATH": "${config:terminal.integrated.env.windows.CANGJIE_PATH};${env:PATH}"
+	},
+	"editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
+	"editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDefinition",
+	"editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDefinition",
+	"editor.selectionHighlight": false,
+	"files.autoSave": "onFocusChange",
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "off",
+		"strings": "on"
+	},
+	"terminal.integrated.profiles.windows": {
+		"cj-cmd": {
+			"path": "cmd.exe",
+			"overrideName": true,
+			"args": ["/k", "chcp 65001"]
+		}
+	},
+	"terminal.integrated.defaultProfile.windows": "cj-cmd"
+}

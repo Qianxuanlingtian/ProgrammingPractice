@@ -1,0 +1,17 @@
+[33mwarning[0m: unused expression
+  [36m==>[0m D:\Program\VS_Code\CangJie\practice\practice_test\src\lambdaexpression.cj:16:5:
+   [36m| [0m
+[36m16[0m [36m| [0m    f2Res[0m
+   [36m| [0m    [33m^^^^^ unused expression[0m
+   [36m| [0m
+   [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+[33mwarning[0m: unused variable:'r'
+  [36m==>[0m D:\Program\VS_Code\CangJie\practice\practice_test\src\main.cj:38:9:
+   [36m| [0m
+[36m38[0m [36m| [0m    var r = Console.stdIn.readln()[0m
+   [36m| [0m        [33m^ unused variable[0m
+   [36m| [0m
+   [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+2 warnings generated, 2 warnings printed.

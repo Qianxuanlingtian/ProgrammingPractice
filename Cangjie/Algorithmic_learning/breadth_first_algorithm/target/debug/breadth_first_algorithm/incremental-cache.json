@@ -1,0 +1,13 @@
+{
+  "packageInformation": {
+    "breadth_first_algorithm": {
+      "rootPackageName": "breadth_first_algorithm",
+      "fileNameHash": "-8112459436954745142",
+      "timeStamp": 1726459664,
+      "buildFlag": true,
+      "exeName": "main"
+    }
+  },
+  "jsonHash": "1656500442451240715",
+  "rootPackageName": "breadth_first_algorithm"
+}

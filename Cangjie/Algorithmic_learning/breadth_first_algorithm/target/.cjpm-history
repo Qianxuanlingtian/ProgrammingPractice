@@ -1,0 +1,23 @@
+{
+  "resolves": [
+    {
+      "rootPackageName": "breadth_first_algorithm",
+      "modulePath": ".",
+      "packagePath": "C:\\Users\\Zhou_\\Desktop\\VS_Code\\Cangjie\\Algorithmic_learning\\breadth_first_algorithm\\src",
+      "fullName": "breadth_first_algorithm",
+      "isMacroPackage": false,
+      "output-type": "executable",
+      "compile-option": "",
+      "native-compile-option": "",
+      "customized-option": {},
+      "link-option": "",
+      "native-link-option": "",
+      "requires": [],
+      "c_libs": {},
+      "isTestPkg": false,
+      "accessLevel": "public"
+    }
+  ],
+  "binDeps": {},
+  "crossBinDeps": {}
+}

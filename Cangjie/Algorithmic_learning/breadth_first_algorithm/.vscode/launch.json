@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cangjie (CJNative): launch",
+            "program": "c:\\Users\\Zhou_\\Desktop\\VS_Code\\Cangjie\\Algorithmic_learning\\breadth_first_algorithm\\target\\debug\\bin\\main.exe",
+            "request": "launch",
+            "type": "cangjieDebug",
+            "externalConsole": false,
+            "buildBeforeLaunch": true,
+            "env": {
+                "PATH": "D:\\Application\\ProgramAbout\\Cangjie\\runtime\\lib\\windows_x86_64_llvm"
+            },
+            "debugMacro": false
+        }
+    ]
+}

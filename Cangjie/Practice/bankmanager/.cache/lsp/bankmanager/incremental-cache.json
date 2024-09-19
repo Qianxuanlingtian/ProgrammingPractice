@@ -1,0 +1,13 @@
+{
+  "packageInformation": {
+    "bankmanager": {
+      "rootPackageName": "bankmanager",
+      "fileNameHash": "8951464819051811099",
+      "timeStamp": 1723569749,
+      "buildFlag": true,
+      "exeName": "main"
+    }
+  },
+  "jsonHash": "1741100199350984449",
+  "rootPackageName": "bankmanager"
+}

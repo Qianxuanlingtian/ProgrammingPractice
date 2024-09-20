@@ -3,7 +3,7 @@
     {
       "rootPackageName": "quicksort",
       "modulePath": ".",
-      "packagePath": "D:\\Program\\VS_Code\\CangJie\\Algorithmic_learning\\quicksort\\src",
+      "packagePath": "D:\\Program\\ProgrammingPractice\\Cangjie\\Algorithmic_learning\\quicksort\\src",
       "fullName": "quicksort",
       "isMacroPackage": false,
       "output-type": "executable",

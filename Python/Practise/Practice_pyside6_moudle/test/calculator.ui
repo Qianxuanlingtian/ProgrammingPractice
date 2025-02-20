@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>528</width>
-    <height>319</height>
+    <width>398</width>
+    <height>453</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,7 +22,40 @@
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="pushButton_clear">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_del">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Backspace</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -40,7 +73,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="pushButton_8">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -53,7 +86,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="pushButton_9">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -83,7 +116,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="pushButton_4">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -109,7 +142,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="pushButton_6">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -178,7 +211,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_">
+      <widget class="QPushButton" name="pushButton_sub">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -195,7 +228,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_4">
      <item>
-      <widget class="QPushButton" name="pushButton_12">
+      <widget class="QPushButton" name="pushButton_0">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -208,7 +241,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_11">
+      <widget class="QPushButton" name="pushButton_point">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -221,7 +254,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="pushButton_equal">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -234,7 +267,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_13">
+      <widget class="QPushButton" name="pushButton_add">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>

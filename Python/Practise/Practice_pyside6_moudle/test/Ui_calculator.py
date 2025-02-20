@@ -22,7 +22,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(528, 319)
+        Form.resize(398, 453)
         self.verticalLayout = QVBoxLayout(Form)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.lineEdit = QLineEdit(Form)
@@ -32,8 +32,31 @@ class Ui_Form(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
         self.lineEdit.setSizePolicy(sizePolicy)
+        self.lineEdit.setReadOnly(True)
 
         self.verticalLayout.addWidget(self.lineEdit)
+
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_clear = QPushButton(Form)
+        self.pushButton_clear.setObjectName(u"pushButton_clear")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.pushButton_clear.sizePolicy().hasHeightForWidth())
+        self.pushButton_clear.setSizePolicy(sizePolicy1)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_clear)
+
+        self.pushButton_del = QPushButton(Form)
+        self.pushButton_del.setObjectName(u"pushButton_del")
+        sizePolicy1.setHeightForWidth(self.pushButton_del.sizePolicy().hasHeightForWidth())
+        self.pushButton_del.setSizePolicy(sizePolicy1)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_del)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout_5)
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
@@ -44,13 +67,6 @@ class Ui_Form(object):
 
         self.horizontalLayout.addWidget(self.pushButton_7)
 
-        self.pushButton_9 = QPushButton(Form)
-        self.pushButton_9.setObjectName(u"pushButton_9")
-        sizePolicy.setHeightForWidth(self.pushButton_9.sizePolicy().hasHeightForWidth())
-        self.pushButton_9.setSizePolicy(sizePolicy)
-
-        self.horizontalLayout.addWidget(self.pushButton_9)
-
         self.pushButton_8 = QPushButton(Form)
         self.pushButton_8.setObjectName(u"pushButton_8")
         sizePolicy.setHeightForWidth(self.pushButton_8.sizePolicy().hasHeightForWidth())
@@ -58,24 +74,31 @@ class Ui_Form(object):
 
         self.horizontalLayout.addWidget(self.pushButton_8)
 
-        self.pushButton_15 = QPushButton(Form)
-        self.pushButton_15.setObjectName(u"pushButton_15")
-        sizePolicy.setHeightForWidth(self.pushButton_15.sizePolicy().hasHeightForWidth())
-        self.pushButton_15.setSizePolicy(sizePolicy)
+        self.pushButton_9 = QPushButton(Form)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        sizePolicy.setHeightForWidth(self.pushButton_9.sizePolicy().hasHeightForWidth())
+        self.pushButton_9.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout.addWidget(self.pushButton_15)
+        self.horizontalLayout.addWidget(self.pushButton_9)
+
+        self.pushButton_div = QPushButton(Form)
+        self.pushButton_div.setObjectName(u"pushButton_div")
+        sizePolicy.setHeightForWidth(self.pushButton_div.sizePolicy().hasHeightForWidth())
+        self.pushButton_div.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout.addWidget(self.pushButton_div)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout)
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.pushButton_6 = QPushButton(Form)
-        self.pushButton_6.setObjectName(u"pushButton_6")
-        sizePolicy.setHeightForWidth(self.pushButton_6.sizePolicy().hasHeightForWidth())
-        self.pushButton_6.setSizePolicy(sizePolicy)
+        self.pushButton_4 = QPushButton(Form)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
+        self.pushButton_4.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_2.addWidget(self.pushButton_6)
+        self.horizontalLayout_2.addWidget(self.pushButton_4)
 
         self.pushButton_5 = QPushButton(Form)
         self.pushButton_5.setObjectName(u"pushButton_5")
@@ -84,31 +107,31 @@ class Ui_Form(object):
 
         self.horizontalLayout_2.addWidget(self.pushButton_5)
 
-        self.pushButton_4 = QPushButton(Form)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
-        self.pushButton_4.setSizePolicy(sizePolicy)
+        self.pushButton_6 = QPushButton(Form)
+        self.pushButton_6.setObjectName(u"pushButton_6")
+        sizePolicy.setHeightForWidth(self.pushButton_6.sizePolicy().hasHeightForWidth())
+        self.pushButton_6.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_2.addWidget(self.pushButton_4)
+        self.horizontalLayout_2.addWidget(self.pushButton_6)
 
-        self.pushButton_16 = QPushButton(Form)
-        self.pushButton_16.setObjectName(u"pushButton_16")
-        sizePolicy.setHeightForWidth(self.pushButton_16.sizePolicy().hasHeightForWidth())
-        self.pushButton_16.setSizePolicy(sizePolicy)
+        self.pushButton_mul = QPushButton(Form)
+        self.pushButton_mul.setObjectName(u"pushButton_mul")
+        sizePolicy.setHeightForWidth(self.pushButton_mul.sizePolicy().hasHeightForWidth())
+        self.pushButton_mul.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_2.addWidget(self.pushButton_16)
+        self.horizontalLayout_2.addWidget(self.pushButton_mul)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout_2)
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.pushButton = QPushButton(Form)
-        self.pushButton.setObjectName(u"pushButton")
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
+        self.pushButton_1 = QPushButton(Form)
+        self.pushButton_1.setObjectName(u"pushButton_1")
+        sizePolicy.setHeightForWidth(self.pushButton_1.sizePolicy().hasHeightForWidth())
+        self.pushButton_1.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_3.addWidget(self.pushButton)
+        self.horizontalLayout_3.addWidget(self.pushButton_1)
 
         self.pushButton_2 = QPushButton(Form)
         self.pushButton_2.setObjectName(u"pushButton_2")
@@ -124,45 +147,45 @@ class Ui_Form(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_3)
 
-        self.pushButton_14 = QPushButton(Form)
-        self.pushButton_14.setObjectName(u"pushButton_14")
-        sizePolicy.setHeightForWidth(self.pushButton_14.sizePolicy().hasHeightForWidth())
-        self.pushButton_14.setSizePolicy(sizePolicy)
+        self.pushButton_sub = QPushButton(Form)
+        self.pushButton_sub.setObjectName(u"pushButton_sub")
+        sizePolicy.setHeightForWidth(self.pushButton_sub.sizePolicy().hasHeightForWidth())
+        self.pushButton_sub.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_3.addWidget(self.pushButton_14)
+        self.horizontalLayout_3.addWidget(self.pushButton_sub)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.pushButton_12 = QPushButton(Form)
-        self.pushButton_12.setObjectName(u"pushButton_12")
-        sizePolicy.setHeightForWidth(self.pushButton_12.sizePolicy().hasHeightForWidth())
-        self.pushButton_12.setSizePolicy(sizePolicy)
+        self.pushButton_0 = QPushButton(Form)
+        self.pushButton_0.setObjectName(u"pushButton_0")
+        sizePolicy.setHeightForWidth(self.pushButton_0.sizePolicy().hasHeightForWidth())
+        self.pushButton_0.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_4.addWidget(self.pushButton_12)
+        self.horizontalLayout_4.addWidget(self.pushButton_0)
 
-        self.pushButton_11 = QPushButton(Form)
-        self.pushButton_11.setObjectName(u"pushButton_11")
-        sizePolicy.setHeightForWidth(self.pushButton_11.sizePolicy().hasHeightForWidth())
-        self.pushButton_11.setSizePolicy(sizePolicy)
+        self.pushButton_point = QPushButton(Form)
+        self.pushButton_point.setObjectName(u"pushButton_point")
+        sizePolicy.setHeightForWidth(self.pushButton_point.sizePolicy().hasHeightForWidth())
+        self.pushButton_point.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_4.addWidget(self.pushButton_11)
+        self.horizontalLayout_4.addWidget(self.pushButton_point)
 
-        self.pushButton_10 = QPushButton(Form)
-        self.pushButton_10.setObjectName(u"pushButton_10")
-        sizePolicy.setHeightForWidth(self.pushButton_10.sizePolicy().hasHeightForWidth())
-        self.pushButton_10.setSizePolicy(sizePolicy)
+        self.pushButton_equal = QPushButton(Form)
+        self.pushButton_equal.setObjectName(u"pushButton_equal")
+        sizePolicy.setHeightForWidth(self.pushButton_equal.sizePolicy().hasHeightForWidth())
+        self.pushButton_equal.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_4.addWidget(self.pushButton_10)
+        self.horizontalLayout_4.addWidget(self.pushButton_equal)
 
-        self.pushButton_13 = QPushButton(Form)
-        self.pushButton_13.setObjectName(u"pushButton_13")
-        sizePolicy.setHeightForWidth(self.pushButton_13.sizePolicy().hasHeightForWidth())
-        self.pushButton_13.setSizePolicy(sizePolicy)
+        self.pushButton_add = QPushButton(Form)
+        self.pushButton_add.setObjectName(u"pushButton_add")
+        sizePolicy.setHeightForWidth(self.pushButton_add.sizePolicy().hasHeightForWidth())
+        self.pushButton_add.setSizePolicy(sizePolicy)
 
-        self.horizontalLayout_4.addWidget(self.pushButton_13)
+        self.horizontalLayout_4.addWidget(self.pushButton_add)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout_4)
@@ -175,21 +198,23 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"\u8ba1\u7b97\u5668", None))
+        self.pushButton_clear.setText(QCoreApplication.translate("Form", u"Clear", None))
+        self.pushButton_del.setText(QCoreApplication.translate("Form", u"Backspace", None))
         self.pushButton_7.setText(QCoreApplication.translate("Form", u"7", None))
-        self.pushButton_9.setText(QCoreApplication.translate("Form", u"8", None))
-        self.pushButton_8.setText(QCoreApplication.translate("Form", u"9", None))
-        self.pushButton_15.setText(QCoreApplication.translate("Form", u"\\", None))
-        self.pushButton_6.setText(QCoreApplication.translate("Form", u"4", None))
+        self.pushButton_8.setText(QCoreApplication.translate("Form", u"8", None))
+        self.pushButton_9.setText(QCoreApplication.translate("Form", u"9", None))
+        self.pushButton_div.setText(QCoreApplication.translate("Form", u"\\", None))
+        self.pushButton_4.setText(QCoreApplication.translate("Form", u"4", None))
         self.pushButton_5.setText(QCoreApplication.translate("Form", u"5", None))
-        self.pushButton_4.setText(QCoreApplication.translate("Form", u"6", None))
-        self.pushButton_16.setText(QCoreApplication.translate("Form", u"X", None))
-        self.pushButton.setText(QCoreApplication.translate("Form", u"1", None))
+        self.pushButton_6.setText(QCoreApplication.translate("Form", u"6", None))
+        self.pushButton_mul.setText(QCoreApplication.translate("Form", u"X", None))
+        self.pushButton_1.setText(QCoreApplication.translate("Form", u"1", None))
         self.pushButton_2.setText(QCoreApplication.translate("Form", u"2", None))
         self.pushButton_3.setText(QCoreApplication.translate("Form", u"3", None))
-        self.pushButton_14.setText(QCoreApplication.translate("Form", u"-", None))
-        self.pushButton_12.setText(QCoreApplication.translate("Form", u"0", None))
-        self.pushButton_11.setText(QCoreApplication.translate("Form", u".", None))
-        self.pushButton_10.setText(QCoreApplication.translate("Form", u"=", None))
-        self.pushButton_13.setText(QCoreApplication.translate("Form", u"+", None))
+        self.pushButton_sub.setText(QCoreApplication.translate("Form", u"-", None))
+        self.pushButton_0.setText(QCoreApplication.translate("Form", u"0", None))
+        self.pushButton_point.setText(QCoreApplication.translate("Form", u".", None))
+        self.pushButton_equal.setText(QCoreApplication.translate("Form", u"=", None))
+        self.pushButton_add.setText(QCoreApplication.translate("Form", u"+", None))
     # retranslateUi
 

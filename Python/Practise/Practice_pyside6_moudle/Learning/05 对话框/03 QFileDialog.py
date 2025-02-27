@@ -29,7 +29,6 @@ class MyWindow(QWidget):
         self.mainLayout.addWidget(self.btn2)
         self.mainLayout.addWidget(self.btn3)
         self.mainLayout.addWidget(self.btn4)
-        
 
 if __name__ == "__main__":
     app = QApplication([])

@@ -7,7 +7,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.quickSuggestions": {
         "other": "on",
-        "comments": "off",
+        "comments": "on",
         "strings": "on"
     }
 }

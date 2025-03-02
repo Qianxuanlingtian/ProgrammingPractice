@@ -26,14 +26,12 @@ class myWindow(QMainWindow):
         self.mmenuBar.addMenu(self.menuHelp)
 
         # 创建各菜单动作
-        # 帮助菜单“关于”关于动作
+        # 帮助菜单的“关于”动作
         self.actionHelpAbout = QAction(self)
         self.actionHelpAbout.setText('关于')
         helpAboutIcon = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.HelpAbout))
         self.actionHelpAbout.setIcon(helpAboutIcon)
-        
-        if self.actionHelpAbout.toggled:
-            QMessageBox.information(self, '关于', '这是一个示例信息')
+        self.actionHelpAbout.triggered.connect(self.actionHelpAbout_triggered)
 
         # 为各菜单添加动作
         self.menuHelp.addAction(self.actionHelpAbout)
@@ -66,6 +64,9 @@ class myWindow(QMainWindow):
 
         # 设置中心控件主布局
         self.centerWG.setLayout(self.centerMainLayout)
+
+    def actionHelpAbout_triggered(self):
+        QMessageBox.about(self, '关于', '这是一个测试窗口')
 
 if __name__ == "__main__":
     app = QApplication([])

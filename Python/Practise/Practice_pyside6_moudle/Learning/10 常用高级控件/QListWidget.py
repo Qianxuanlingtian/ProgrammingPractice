@@ -83,18 +83,40 @@ class Window3(QWidget):
 
         # 给窗体添加上下文菜单
         self.sayHello = QAction('你好')
-        # self.btn = QPushButton('升序排列')
-        # # 对列表进行排序
-        # self.btn.clicked.connect(lambda: self.listWidget.sortItems(Qt.SortOrder.AscendingOrder))
-        # self.btn1 = QPushButton('降序排列')
-        # self.btn1.clicked.connect(lambda: self.listWidget.sortItems(Qt.SortOrder.DescendingOrder))
+        self.setContextMenuPolicy(Qt.ContextMenuPolicy.ActionsContextMenu)
+        self.addAction(self.sayHello)
 
-        self.btnLayout = QHBoxLayout()
-        self.btnLayout.addWidget(self.btn)
-        self.btnLayout.addWidget(self.btn1)
+        # 给控件添加上下文菜单
+        self.outputSelectedItem = QAction("输出当前选中的值")
+        self.listWidget.setContextMenuPolicy(Qt.ContextMenuPolicy.ActionsContextMenu)
+        self.listWidget.addAction(self.outputSelectedItem)
+        self.deleteCurrentItem = QAction("删除当前值")
+        self.listWidget.addAction(self.deleteCurrentItem)
+
+        # 将第一个元素设置为能够选中给元素
+        self.listWidget.item(0).setCheckState(Qt.CheckState.Unchecked)
 
         self.mainLayout.addWidget(self.listWidget)
-        self.mainLayout.addLayout(self.btnLayout)
+
+        self.bind()
+    
+    def bind(self):
+        self.listWidget.currentItemChanged.connect(self.currItemChange)
+        self.listWidget.itemChanged.connect(self.itemChange)
+        self.sayHello.triggered.connect(lambda: print("你好"))
+        self.outputSelectedItem.triggered.connect(self.outputSeclectedItemText)
+        self.deleteCurrentItem.triggered.connect(lambda: self.listWidget.takeItem(self.listWidget.currentRow()))
+
+    def currItemChange(self, item):
+        print(f'当前选择的值是：{item.text()}')
+    
+    def itemChange(self):
+        print(f'{self.listWidget.currentItem().text()}被选中了！')
+        print(self.listWidget.currentItem().checkState())
+
+
+    def outputSeclectedItemText(self):
+        print(self.listWidget.currentItem().text())
 
 if __name__ == '__main__':
     app = QApplication([])
@@ -102,6 +124,6 @@ if __name__ == '__main__':
     window1.show()
     window2 = Window2()
     window2.show()
-    window2 = Window3()
-    window2.show()
+    window3 = Window3()
+    window3.show()
     app.exec()

@@ -1,12 +1,21 @@
 from PySide6.QtCore import QSize
 from PySide6.QtWidgets import QApplication, QWidget
-from Ui_untitled import Ui_Form
+from qfluentwidgets import (FluentWindow,
+                            FluentIconBase,
+                            FluentIcon,
+                            FlowLayout,
+                            PushButton)
 
-class MyWindow(QWidget, Ui_Form):
+class MyWindow(FluentWindow):
     def __init__(self):
         super().__init__()
-        self.setupUi(self)
+        self.homeWidget = QWidget()
+        self.homeWidget.setObjectName('HomepageWidget')
 
+        self.homeLayout = FlowLayout(self.homeWidget)
+        self.homeLayout.addWidget(PushButton('测试'))
+
+        self.addSubInterface(self.homeWidget, FluentIcon.HOME, "主页")
 
 if __name__ == '__main__':
     app = QApplication([])

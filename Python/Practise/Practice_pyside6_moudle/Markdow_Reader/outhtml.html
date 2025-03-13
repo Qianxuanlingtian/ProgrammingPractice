@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 预览</title>
+    <link rel="stylesheet" href="resoucse\style.css">
+</head>
+<body>
+<h1 id="markdown">Markdown 文本浏览器项目大纲</h1>
+<h2 id="_1">项目概述</h2>
+<p>本项目旨在开发一个基于 Python 和 PySide6 的 Markdown 文本浏览器。该应用程序将允许用户加载、查看和渲染 Markdown 文件，并支持基本的文本编辑功能。</p>
+<h2 id="_2">功能需求</h2>
+<ol>
+<li>
+<p><strong>文件加载</strong><br />
+   - 支持打开本地 Markdown 文件。<br />
+   - 支持拖放文件到应用程序窗口进行加载。</p>
+</li>
+<li>
+<p><strong>Markdown 渲染</strong><br />
+   - 使用 Markdown 解析库（如 <code>markdown</code> 或 <code>mistune</code>）将 Markdown 文本渲染为 HTML。<br />
+   - 使用 PySide6 的 <code>QTextBrowser</code> 或 <code>QWebEngineView</code> 显示渲染后的 HTML 内容。</p>
+</li>
+<li>
+<p><strong>文本编辑</strong><br />
+   - 提供基本的文本编辑功能，允许用户编辑 Markdown 文件。<br />
+   - 支持实时预览功能，用户在编辑时可以看到 Markdown 渲染效果。</p>
+</li>
+<li>
+<p><strong>保存功能</strong><br />
+   - 支持保存编辑后的 Markdown 文件。</p>
+</li>
+<li>
+<p><strong>界面设计</strong><br />
+   - 使用 PySide6 设计用户界面，包括菜单栏、工具栏和状态栏。<br />
+   - 提供简洁、直观的用户体验。</p>
+</li>
+<li>
+<p><strong>扩展功能</strong><br />
+   - 支持语法高亮。<br />
+   - 支持导出 Markdown 文件为 HTML 或 PDF 格式。</p>
+</li>
+</ol>
+<h2 id="_3">技术栈</h2>
+<ul>
+<li><strong>编程语言</strong>: Python</li>
+<li><strong>GUI 框架</strong>: PySide6</li>
+<li><strong>Markdown 解析库</strong>: <code>markdown</code> 或 <code>mistune</code></li>
+<li><strong>HTML 渲染</strong>: <code>QTextBrowser</code> 或 <code>QWebEngineView</code></li>
+</ul>
+<h2 id="_4">项目结构</h2>
+<pre><code>markdown-viewer/
+├── main.py                  # 主程序入口
+├── ui/                      # 用户界面文件
+│   └── main_window.ui       # 主窗口 UI 文件
+├── utils/                   # 工具类
+│   └── markdown_parser.py   # Markdown 解析工具
+├── resources/               # 资源文件
+│   └── styles.css           # CSS 样式文件
+└── README.md                # 项目说明文档
+</code></pre>
+<h2 id="_5">开发计划</h2>
+<ol>
+<li>
+<p><strong>第一阶段</strong>: 搭建项目框架<br />
+   - 创建项目目录结构。<br />
+   - 初始化 PySide6 应用程序窗口。</p>
+</li>
+<li>
+<p><strong>第二阶段</strong>: 实现文件加载和渲染功能<br />
+   - 实现文件加载功能。<br />
+   - 集成 Markdown 解析库，实现 Markdown 文本渲染。</p>
+</li>
+<li>
+<p><strong>第三阶段</strong>: 实现文本编辑和实时预览功能<br />
+   - 添加文本编辑功能。<br />
+   - 实现实时预览功能。</p>
+</li>
+<li>
+<p><strong>第四阶段</strong>: 完善界面设计和扩展功能<br />
+   - 设计并优化用户界面。<br />
+   - 添加保存、导出等扩展功能。</p>
+</li>
+<li>
+<p><strong>第五阶段</strong>: 测试和优化<br />
+   - 进行功能测试和性能优化。<br />
+   - 修复已知问题，完善用户体验。</p>
+</li>
+</ol>
+<h2 id="_6">参考资料</h2>
+<ul>
+<li><a href="https://doc.qt.io/qtforpython/">PySide6 官方文档</a></li>
+<li><a href="https://python-markdown.github.io/">Python Markdown 库文档</a></li>
+<li><a href="https://mistune.readthedocs.io/en/latest/">Mistune 文档</a></li>
+</ul>
+<h2 id="_7">许可证</h2>
+<p>本项目采用 MIT 许可证。</p>
+<hr />
+<p><strong>备注</strong>: 以上大纲为初步规划，具体实现过程中可能会根据实际需求进行调整。</p>
+<p>你可以将这个 Markdown 文件保存为 <code>project_outline.md</code>，并根据实际开发进度进行调整和补充。希望这个大纲对你开发 Markdown 文本浏览器有所帮助！</p>
+</body>
+</html>

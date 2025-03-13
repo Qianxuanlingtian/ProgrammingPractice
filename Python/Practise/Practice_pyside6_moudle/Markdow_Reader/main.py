@@ -5,6 +5,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QFileDialog, Q
 from PySide6.QtGui import QTextDocument
 from ui.Ui_main_window import Ui_MainWindow
 from markdown import markdown
+from utils.markdown_parser import convert_md_to_html
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -39,8 +40,27 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if file_type == 'MarkDown文件(*.md)':
             with open(file_path, 'r', encoding='utf-8') as f:
                 markdown_content = f.read()
-                html_content = markdown(markdown_content)
-                self.textBrowser.setHtml(html_content)
+                html_content = markdown(markdown_content, extensions=[
+                    'fenced_code',  # 支持代码块
+                    'tables',       # 支持表格
+                    'toc',          # 支持目录
+                    'nl2br',        # 换行转换为<br>
+                    'sane_lists'    # 更智能的列表处理
+                ])
+                
+                # 添加基本样式
+                styled_html = f"""
+                <html>
+                    <head>
+                        <link rel="stylesheet" href="resoucse/style.css">
+                    </head>
+                    <body>
+                        {html_content}
+                    </body>
+                </html>
+                """
+                self.textBrowser.setHtml(styled_html)
+            convert_md_to_html(file_path, Path('outhtml.html'))
 
     def helpAbout(self):
         self.helpAboutMessage = QMessageBox()

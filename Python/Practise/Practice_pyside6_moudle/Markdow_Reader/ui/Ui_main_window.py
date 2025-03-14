@@ -18,7 +18,7 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QGridLayout, QHeaderView, QListWidget,
     QListWidgetItem, QMainWindow, QMenu, QMenuBar,
-    QSizePolicy, QStatusBar, QTextBrowser, QTreeWidget,
+    QSizePolicy, QStatusBar, QTextEdit, QTreeWidget,
     QTreeWidgetItem, QWidget)
 
 class Ui_MainWindow(object):
@@ -51,16 +51,17 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.treeWidget, 0, 0, 1, 1)
 
-        self.textBrowser = QTextBrowser(self.centralWidget)
-        self.textBrowser.setObjectName(u"textBrowser")
-
-        self.gridLayout.addWidget(self.textBrowser, 0, 1, 2, 1)
-
         self.listWidget = QListWidget(self.centralWidget)
         self.listWidget.setObjectName(u"listWidget")
         self.listWidget.setMaximumSize(QSize(300, 16777215))
 
         self.gridLayout.addWidget(self.listWidget, 1, 0, 1, 1)
+
+        self.textEdit = QTextEdit(self.centralWidget)
+        self.textEdit.setObjectName(u"textEdit")
+        self.textEdit.setReadOnly(True)
+
+        self.gridLayout.addWidget(self.textEdit, 0, 1, 2, 1)
 
         MainWindow.setCentralWidget(self.centralWidget)
         self.menubar = QMenuBar(MainWindow)

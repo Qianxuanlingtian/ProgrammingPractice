@@ -8,6 +8,8 @@
    - 支持打开本地 Markdown 文件。
    - 支持拖放文件到应用程序窗口进行加载。
 
+   - [ ] 解决
+
 2. **Markdown 渲染**
    - 使用 Markdown 解析库（如 `markdown` 或 `mistune`）将 Markdown 文本渲染为 HTML。
    - 使用 PySide6 的 `QTextBrowser` 或 `QWebEngineView` 显示渲染后的 HTML 内容。
@@ -50,24 +52,26 @@ markdown-viewer/
 1. **第一阶段**: 搭建项目框架
    - 创建项目目录结构。
    - 初始化 PySide6 应用程序窗口。
-
 2. **第二阶段**: 实现文件加载和渲染功能
    - 实现文件加载功能。
    - 集成 Markdown 解析库，实现 Markdown 文本渲染。
-
 3. **第三阶段**: 实现文本编辑和实时预览功能
    - 添加文本编辑功能。
    - 实现实时预览功能。
-
 4. **第四阶段**: 完善界面设计和扩展功能
    - 设计并优化用户界面。
    - 添加保存、导出等扩展功能。
-
 5. **第五阶段**: 测试和优化
    - 进行功能测试和性能优化。
    - 修复已知问题，完善用户体验。
+   
+
+![](C:\Users\Admin\Pictures\Screenshots\屏幕截图 2025-02-27 145540.png)
+
+
 
 ## 参考资料
+
 - [PySide6 官方文档](https://doc.qt.io/qtforpython/)
 - [Python Markdown 库文档](https://python-markdown.github.io/)
 - [Mistune 文档](https://mistune.readthedocs.io/en/latest/)

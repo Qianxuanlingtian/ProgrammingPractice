@@ -19,7 +19,8 @@ def convert_md_to_html(md_file_path, html_file_path):
         'tables',       # 支持表格
         'toc',          # 支持目录
         'nl2br',        # 换行转换为<br>
-        'sane_lists'    # 更智能的列表处理
+        'mdx_truly_sane_lists',  # 更好的列表处理
+        'pymdownx.tasklist'  # 支持待办事项
     ])
     
     # 添加完整的HTML文档结构

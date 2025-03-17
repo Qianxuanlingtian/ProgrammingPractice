@@ -2,6 +2,7 @@ import os
 import shutil
 from pathlib import Path
 from markdown import markdown
+from markdown.extensions.codehilite import CodeHiliteExtension
 
 # 将Markdown文件转换为html文件
 def convert_md_to_html(md_folder, html_folder):
@@ -11,7 +12,9 @@ def convert_md_to_html(md_folder, html_folder):
     """
     # 指定样式文件
     css_path = Path('resoucse/style.css').resolve().relative_to(Path.cwd())
+    pygments_css_path = Path('resoucse/pygments.css').resolve().relative_to(Path.cwd())
     print('css_path:', css_path)
+    print('pygments_css_path:', pygments_css_path)
 
     # 确保输出文件夹存在
     Path(html_folder).mkdir(parents=True, exist_ok=True)
@@ -39,7 +42,11 @@ def convert_md_to_html(md_folder, html_folder):
                     'toc',          # 支持目录
                     'nl2br',        # 换行转换为<br>
                     'mdx_truly_sane_lists',  # 更好的列表处理
-                    'pymdownx.tasklist'  # 支持待办事项
+                    'pymdownx.tasklist',  # 支持待办事项
+                    'pymdownx.highlight',  # 代码高亮
+                    'pymdownx.superfences',  # 更好的代码块支持
+                    'pymdownx.extra',  # 额外功能
+                    CodeHiliteExtension(linenums=False)  # 添加这一行，支持代码高亮
                 ])
                 
                 # 添加完整的HTML文档结构
@@ -50,6 +57,7 @@ def convert_md_to_html(md_folder, html_folder):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown 预览</title>
     <link rel="stylesheet" href="{css_path}">
+    <link rel="stylesheet" href="{pygments_css_path}">
 </head>
 <body>
 {html_content}
@@ -65,5 +73,3 @@ def convert_md_to_html(md_folder, html_folder):
                 # 拷贝非md文件
                 other_file_path = os.path.join(output_dir, file)
                 shutil.copy2(file_path, other_file_path)
-
-
